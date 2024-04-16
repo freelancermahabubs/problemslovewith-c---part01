@@ -1,8 +1,19 @@
-#include<stdio.h>
-int main()
-{
+#include <stdio.h>
 
-    printf("Recently I heard that you’ve achieved 95%% marks in your exam.\nThis is brilliant!\nI wish you’ll shine in your life!\tGood luck with all the barriers(/\\) in your life.");
+int main() {
+int N;
+    scanf("%d", &N);
 
-return 0;
+    if (N > 1000) {
+        printf("I will buy Punjabi\n");
+        N -= 1000; 
+        if (N >= 500) {
+            printf("I will buy new shoes\n");
+            printf("Alisa will buy new shoes\n");
+        }
+    } else {
+        printf("Bad luck!\n");
+    }
+
+ return 0;
 }
